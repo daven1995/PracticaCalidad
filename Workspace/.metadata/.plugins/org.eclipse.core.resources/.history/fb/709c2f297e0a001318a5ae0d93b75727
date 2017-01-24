@@ -1,0 +1,18 @@
+package com.epn3;
+
+import javax.swing.JOptionPane;
+
+public class Aplicacion {
+	public  static void main(String[] args) {
+		String salida="";
+		Vector vector=new Vector();
+		vector.setVector();
+		salida+="\nEl vector es : "+vector;
+		salida+="\nLa suma de las entradas es = "+vector.sumatorio();
+		salida+="\nLa suma de los pares es = "+vector.sumapar();	
+		salida+="\nLa suma de los numeros primos es = "+vector.sumaprimo();
+		salida+="\nEl vector ordenado es : "+vector;
+		JOptionPane.showMessageDialog(null, salida);
+		
+	}
+}

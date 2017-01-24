@@ -1,0 +1,21 @@
+package com.epn3;
+
+import javax.swing.JOptionPane;
+
+public class Aplicacion {
+	public  static void main(String[] args) {
+		String salida="";
+		Vector vector=new Vector();
+		vector.setVector();
+		salida+="\nEl vector es : "+vector;
+		salida+="\nLa suma de las entradas es = "+vector.sumatorio();
+		salida+="\nLa suma de los pares es = "+vector.sumapar();	
+		salida+="\nLa suma de los numeros primos es = "+vector.sumaprimo();
+		vector.sortBurbuja();
+		salida+="\nEl vector ordenado es : "+ vector.toString();
+		int elem=Integer.parseInt(JOptionPane.showInputDialog("Escriba un numero para buscar"));
+		salida+="\nEl elemento existe en la posicion "+ vector.busquedaSecuencial(elem);
+		JOptionPane.showMessageDialog(null, salida);
+		
+	}
+}

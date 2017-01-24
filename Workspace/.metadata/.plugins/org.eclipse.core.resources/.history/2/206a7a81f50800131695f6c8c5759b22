@@ -1,0 +1,25 @@
+package com.epn3;
+
+import javax.swing.JOptionPane;
+
+public class Vector {
+private int [] vector;
+public Vector ()
+{int longitud = 0;
+vector =new int [longitud];
+}
+public int[] getVector() {
+	return vector;
+}
+public void setVector() {
+	for (int i=0; i<this.vector.length;i++)
+	{vector[i]=Integer.parseInt(JOptionPane.showInputDialog("Vector["+i+"]="));	
+}}
+public String toString ()
+{String salida="";
+for (int i=0; i<this.vector.length;i++)
+salida+=vector[i]+"";
+return salida;
+
+}
+}

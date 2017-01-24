@@ -1,0 +1,16 @@
+package com.epn3;
+
+import javax.swing.JOptionPane;
+
+public class Aplicacion {
+	public  static void main(String[] args) {
+		String salida="";
+		Vector vector=new Vector();
+		vector.setVector();
+		salida+=vector;
+		salida+="\nLa suma de las entradas es = "+vector.sumatorio();
+		salida+="\nLa suma de los pares es = "+vector.sumapar();	
+		JOptionPane.showMessageDialog(null, salida);
+		
+	}
+}
